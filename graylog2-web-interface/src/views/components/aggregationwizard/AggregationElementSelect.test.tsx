@@ -16,7 +16,6 @@
  */
 import React from 'react';
 import { render, screen } from 'wrappedTestingLibrary';
-import selectEvent from 'react-select-event';
 import userEvent from '@testing-library/user-event';
 
 import AggregationElementSelect from './AggregationElementSelect';
