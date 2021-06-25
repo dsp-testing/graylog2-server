@@ -17,15 +17,30 @@
 import React from 'react';
 
 import Select from 'components/common/Select';
+import type { Props as SelectProps } from 'components/common/Select';
+
+type Props = SelectProps<string>;
 
 /**
  * Component that wraps and render a `Select` where multiple options can be selected. It passes all
  * props to the underlying `Select` component, so please look there to find more information about them.
  */
-const MultiSelect = ({ onChange, ...rest }) => {
-  return <Select multi {...rest} />;
+const MultiSelect = ({ onChange, ...rest }: Props) => {
+  const _extractOptionValue = (option) => {
+    const { valueKey, delimiter } = rest;
+
+    if (option) {
+      return Array.isArray(option) ? option.map((i) => i[valueKey]).join(delimiter) : option[valueKey || ''];
+    }
+
+    return '';
+  };
+
+  const _onChange = (option) => onChange(_extractOptionValue(option));
+
+  return <Select multi onChange={_onChange} {...rest} />;
 };
 
 MultiSelect.propTypes = Select.propTypes;
 
-return MultiSelect;
+export default MultiSelect;
