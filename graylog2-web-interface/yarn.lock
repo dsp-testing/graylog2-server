@@ -5957,9 +5957,9 @@ elementary-circuits-directed-graph@^1.0.4:
     strongly-connected-components "^1.0.1"
 
 elliptic@^6.5.3:
-  version "6.5.4"
-  resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.5.4.tgz#da37cebd31e79a1367e941b592ed1fbebd58abbb"
-  integrity sha512-iLhC6ULemrljPZb+QutR5TQGB+pdW6KGD5RSegS+8sorOZT+rdQFbsQFJgvN3eRqNALqJer4oQ16YvJHlU8hzQ==
+  version "6.6.1"
+  resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.6.1.tgz#3b8ffb02670bf69e382c7f65bf524c97c5405c06"
+  integrity sha512-RaddvvMatK2LJHqFJ+YA4WysVN5Ita9E35botqIYspQ4TkRAlCicdzKOjlyv/1Za5RyTNn7di//eEV0uTAfe3g==
   dependencies:
     bn.js "^4.11.9"
     brorand "^1.1.0"
@@ -8258,7 +8258,7 @@ graceful-fs@^4.2.4:
   integrity sha512-nTnJ528pbqxYanhpDYsi4Rd8MAeaBA67+RZ10CM1m3bTAVFEDcd5AuA4a6W5YkGZ1iNXHzZz8T6TBKLeBuNriQ==
 
 "graylog-web-plugin@file:packages/graylog-web-plugin":
-  version "4.1.0-SNAPSHOT"
+  version "4.2.0-SNAPSHOT"
   dependencies:
     "@babel/preset-env" "7.13.10"
     "@babel/preset-typescript" "7.13.0"
