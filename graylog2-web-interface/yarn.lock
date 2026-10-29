@@ -2429,6 +2429,11 @@
   dependencies:
     "@types/jest" "*"
 
+"@types/trusted-types@^2.0.7":
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/@types/trusted-types/-/trusted-types-2.0.7.tgz#baccb07a970b91707df3a3e8ba6896c57ead2d11"
+  integrity sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==
+
 "@types/uglify-js@*":
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/@types/uglify-js/-/uglify-js-3.0.4.tgz#96beae23df6f561862a830b4288a49e86baac082"
@@ -5808,10 +5813,12 @@ domhandler@^2.3.0:
   dependencies:
     domelementtype "1"
 
-dompurify@^2.0.11:
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-2.2.3.tgz#ec653ba521b39f397c2ca045769438d593ea8a9f"
-  integrity sha512-8Hv7Q0FuwD9rWoB6qI2eZsfKbGXfoUVuGHHrE15vgk4ReOKwOkSgbqb2OMFtc0d5besOEkoLkcyuV10zQ2X5gw==
+dompurify@^3.4.17:
+  version "3.4.17"
+  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-3.4.17.tgz#074bbb24eaa419535ac19ffe7f663104b0e1543d"
+  integrity sha512-B/pSlYVHQ58kqISD/yDjuJ1yfzI34m1gF4lAod2bwSRhiN4K5Cl3H8Af7hqB2PmTL911tdEudnnXn5FnhRoz0w==
+  optionalDependencies:
+    "@types/trusted-types" "^2.0.7"
 
 domutils@1.5.1:
   version "1.5.1"
@@ -8258,7 +8265,7 @@ graceful-fs@^4.2.4:
   integrity sha512-nTnJ528pbqxYanhpDYsi4Rd8MAeaBA67+RZ10CM1m3bTAVFEDcd5AuA4a6W5YkGZ1iNXHzZz8T6TBKLeBuNriQ==
 
 "graylog-web-plugin@file:packages/graylog-web-plugin":
-  version "4.1.0-SNAPSHOT"
+  version "4.2.0-SNAPSHOT"
   dependencies:
     "@babel/preset-env" "7.13.10"
     "@babel/preset-typescript" "7.13.0"
